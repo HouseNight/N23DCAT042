@@ -1,0 +1,177 @@
+.container {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 18px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header-content, .nav-links, .hero-actions, .section-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.header-content, .section-heading {
+  justify-content: space-between;
+}
+
+.brand {
+  color: #087f8c;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  gap: 8px;
+}
+
+.nav-link {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #475569;
+  text-decoration: none;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #087f8c;
+  background-color: #eaf7f8;
+}
+
+.hero, .page-banner {
+  padding: 48px 0;
+  text-align: center;
+  background-color: #eaf7f8;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin: 0 auto 20px;
+  font-size: 38px;
+  color: #164e63;
+}
+
+.hero p, .page-banner p {
+  max-width: 640px;
+  margin: 0 auto 24px;
+  color: #475569;
+}
+
+.hero-actions {
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #087f8c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #086773;
+}
+
+.text-link {
+  color: #08757d;
+  font-weight: bold;
+  text-underline-offset: 4px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin-bottom: 0;
+}
+
+.specialty-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.specialty-card {
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.specialty-card h3 {
+  color: #087f8c;
+  font-size: 21px;
+}
+
+.specialty-card p {
+  margin-bottom: 0;
+  color: #475569;
+}
+
+.page-banner h1 {
+  color: #164e63;
+  font-size: 34px;
+}
+
+.page-banner p {
+  margin-bottom: 0;
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+.site-footer {
+  padding: 24px 0;
+  border-top: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.site-footer strong {
+  color: #087f8c;
+}
+
+.site-footer p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.not-found {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    justify-content: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .page-banner h1 {
+    font-size: 28px;
+  }
+
+  .specialty-list {
+    grid-template-columns: 1fr;
+  }
+}
